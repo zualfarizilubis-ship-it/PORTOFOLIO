@@ -1,0 +1,27 @@
+/* CSS TAMBAHAN (dipakai bersama Tailwind)  */
+
+/* Foto profil: transisi halus saat kursor diarahkan */
+.foto-profil {
+  transition: transform 0.3s;
+}
+.foto-profil:hover {
+  transform: scale(1.05);
+}
+
+/*  MEDIA QUERY  */
+
+/* Tablet */
+@media (max-width: 768px) {
+  .foto-profil {
+    width: 208px;
+    height: 208px;
+  }
+}
+
+/* HP */
+@media (max-width: 640px) {
+  .foto-profil {
+    width: 180px;
+    height: 180px;
+  }
+}

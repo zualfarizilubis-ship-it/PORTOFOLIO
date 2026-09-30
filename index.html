@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portofolio | Zu Alfarizi Lubis</title>
+
+  <!-- TAILWIND CSS (via CDN) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- CSS tambahan (Media Query manual) -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body class="bg-gray-900 text-gray-300 font-sans leading-relaxed">
+
+  NAVIGASI (Flexbox) 
+  <header class="fixed top-0 left-0 w-full bg-gray-950 border-b border-gray-800 z-50">
+    <nav class="max-w-4xl mx-auto px-6 py-4 flex justify-between items-center">
+      <a href="#beranda" class="text-xl font-bold text-white">Zu<span class="text-indigo-400">.dev</span></a>
+
+      <input type="checkbox" id="toggle" class="peer hidden" />
+      <label for="toggle" class="sm:hidden text-white text-2xl cursor-pointer select-none">☰</label>
+
+      <ul class="hidden peer-checked:flex absolute top-full inset-x-0 flex-col gap-4 bg-gray-950 border-b border-gray-800 px-6 py-4 text-sm
+                 sm:static sm:flex sm:flex-row sm:gap-6 sm:border-0 sm:p-0 sm:bg-transparent">
+        <li><a href="#tentang" class="hover:text-indigo-400">Tentang</a></li>
+        <li><a href="#kemampuan" class="hover:text-indigo-400">Kemampuan</a></li>
+        <li><a href="#proyek" class="hover:text-indigo-400">Proyek</a></li>
+        <li><a href="#kontak" class="hover:text-indigo-400">Kontak</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ===== BERANDA ===== -->
+  <section id="beranda" class="min-h-screen flex items-center justify-center text-center px-6 pt-24 bg-gradient-to-b from-gray-900 to-indigo-950">
+    <div class="max-w-4xl">
+      <!-- GANTI FOTO: taruh foto di folder "img" dengan nama "foto.jpg" -->
+      <img src="imagezul.jpg" alt="Foto Zu Alfarizi Lubis"
+           class="foto-profil w-56 h-56 mx-auto rounded-full object-cover border-4 border-indigo-400 shadow-lg shadow-indigo-400/30" />
+      <h1 class="mt-6 text-3xl md:text-4xl font-extrabold text-white">Halo, saya Zu Alfarizi Lubis</h1>
+      <p class="mt-3 text-lg text-gray-400">Mahasiswa Ilmu Komputer | Web Developer</p>
+      <a href="#proyek" class="inline-block mt-6 bg-indigo-500 hover:bg-indigo-400 text-white font-semibold px-6 py-3 rounded-lg transition-colors">Lihat Proyek</a>
+    </div>
+  </section>
+
+  <!-- ===== TENTANG SAYA ===== -->
+  <section id="tentang" class="px-6 py-16">
+    <div class="max-w-4xl mx-auto">
+      <h2 class="text-2xl font-bold text-white text-center mb-8">Tentang <span class="text-indigo-400">Saya</span></h2>
+      <p class="text-center text-gray-400 max-w-xl mx-auto">
+        Saya Zu Alfarizi Lubis, mahasiswa Ilmu Komputer yang sedang mendalami pengembangan web.
+        Senang membuat website yang bersih, responsif, dan mudah digunakan.
+      </p>
+    </div>
+  </section>
+
+  <!-- ===== KEMAMPUAN (Grid) ===== -->
+  <section id="kemampuan" class="px-6 py-16 bg-gray-950">
+    <div class="max-w-4xl mx-auto">
+      <h2 class="text-2xl font-bold text-white text-center mb-8">Kemampuan</h2>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
+        <div class="bg-gray-800 border border-gray-700 hover:border-indigo-400 rounded-lg p-6 transition-colors">
+          <div class="text-3xl">🌐</div><h3 class="mt-2 font-semibold text-white">CPP</h3>
+        </div>
+        <div class="bg-gray-800 border border-gray-700 hover:border-indigo-400 rounded-lg p-6 transition-colors">
+          <div class="text-3xl">🎨</div><h3 class="mt-2 font-semibold text-white">PASCAL</h3>
+        </div>
+        <div class="bg-gray-800 border border-gray-700 hover:border-indigo-400 rounded-lg p-6 transition-colors">
+          <div class="text-3xl">⚡</div><h3 class="mt-2 font-semibold text-white">JavaScript</h3>
+        </div>
+        <div class="bg-gray-800 border border-gray-700 hover:border-indigo-400 rounded-lg p-6 transition-colors">
+          <div class="text-3xl">💨</div><h3 class="mt-2 font-semibold text-white">PHYTON</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROYEK (Grid) ===== -->
+  
+<section id="proyek" class="px-6 py-16">
+  <div class="max-w-4xl mx-auto">
+    <h2 class="text-2xl font-bold text-white text-center mb-8">Proyek</h2>
+    <!-- GANTI: link href dengan link proyekmu -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+      <a href="https://github.com/aksaray78/Wordle-Clone.git" target="_blank" rel="noopener noreferrer"
+         class="block bg-gray-800 hover:bg-gray-700 border border-gray-700 hover:border-indigo-400 rounded-lg p-6 transition-colors">
+        <h3 class="font-semibold text-white">Proyek membuat game wordle kata</h3>
+        <p class="mt-2 text-sm text-gray-400">permainan teka-teki online di mana pemain harus menebak kata tersembunyi—biasanya terdiri dari 5 huruf—dalam 6 kali percobaan.</p>
+        <span class="inline-block mt-3 text-sm text-indigo-400">Lihat proyek →</span>
+      </a>
+
+      <a href="https://github.com/Quark-hub/projek-uas-lab-4-sistem-parkir.git" target="_blank" rel="noopener noreferrer"
+         class="block bg-gray-800 hover:bg-gray-700 border border-gray-700 hover:border-indigo-400 rounded-lg p-6 transition-colors">
+        <h3 class="font-semibold text-white">proyek sistem parkir</h3>
+        <p class="mt-2 text-sm text-gray-400">menghitung jumlah parkir kendaraan.</p>
+        <span class="inline-block mt-3 text-sm text-indigo-400">Lihat proyek →</span>
+      </a>
+
+      <a href="https://github.com/andhikarianda09-maker/UAS_AP_TERSERAH-KATA-AJI.git" target="_blank" rel="noopener noreferrer"
+         class="block bg-gray-800 hover:bg-gray-700 border border-gray-700 hover:border-indigo-400 rounded-lg p-6 transition-colors">
+        <h3 class="font-semibold text-white">proyek game dll</h3>
+        <p class="mt-2 text-sm text-gray-400">dimana memuat codinagan banyak game.</p>
+        <span class="inline-block mt-3 text-sm text-indigo-400">Lihat proyek →</span>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+  <!-- ===== KONTAK (Flexbox) ===== -->
+  <section id="kontak" class="px-6 py-16 bg-gray-950">
+    <div class="max-w-4xl mx-auto">
+      <h2 class="text-2xl font-bold text-white text-center mb-8">Kontak</h2>
+      <p class="text-center text-gray-400 max-w-xl mx-auto">Hubungi saya melalui email atau media sosial berikut:</p>
+      <!-- GANTI: email dan link sosial media dengan milikmu -->
+      <div class="flex flex-wrap justify-center gap-4 mt-8">
+        <a href="mailto:zualfarizilubis@email.com" class="bg-gray-800 hover:bg-gray-700 border border-gray-700 rounded-lg px-6 py-4 text-center font-semibold text-white transition-colors">📧 <span class="font-normal text-gray-300">Email</span></a>
+        <a href="https://github.com/zualfarizilubis-ship-it" target="_blank" class="bg-gray-800 hover:bg-gray-700 border border-gray-700 rounded-lg px-6 py-4 text-center font-semibold text-white transition-colors">🐙 <span class="font-normal text-gray-300">GitHub</span></a>
+        <a href="https://www.linkedin.com/in/zu-alfarizi-lubis-723ab8380?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" class="bg-gray-800 hover:bg-gray-700 border border-gray-700 rounded-lg px-6 py-4 text-center font-semibold text-white transition-colors">💼 <span class="font-normal text-gray-300">LinkedIn</span></a>
+        <a href="https://www.instagram.com/ajilbs07?stkn=b3gyMzUzdm50eG5u" target="_blank" class="bg-gray-800 hover:bg-gray-700 border border-gray-700 rounded-lg px-6 py-4 text-center font-semibold text-white transition-colors">📷 <span class="font-normal text-gray-300">Instagram</span></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="bg-gray-950 border-t border-gray-800 p-6 text-center text-sm text-gray-500">
+    © 2026 Zu Alfarizi Lubis — Dibuat dengan HTML &amp; Tailwind CSS
+  </footer>
+
+</body>
+</html>
